@@ -1,0 +1,174 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b818c; /* Verde */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #menu {
+            background-color: #2b818c;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #menu h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #211c33;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        #menu ul li a {
+            color: #211c33;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #conteudo {
+            margin-top: 80px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        #destaques, #projetos {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .destaque, .projeto {
+            background-color: #ffc994; /* Cor clara */
+            padding: 20px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .destaque img, .projeto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destaque h2, .destaque p, .projeto h2, .projeto p {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #211c33;
+        }
+
+        .projeto button {
+            background-color: #ed2860;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #rodape {
+            background-color: #2b818c;
+            padding: 20px;
+            box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #rodape ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        #rodape ul li a {
+            color: #211c33;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h1>FleelaDeProgramação</h1>
+        <ul>
+            <li><a href="#">Perfil 📂</a></li>
+            <li><a href="#">Mensagens 📧</a></li>
+            <li><a href="#">Ajuda ❓</a></li>
+            <li><a href="#">Pagamentos 💰</a></li>
+            <li><a href="#">Projetos 📝</a></li>
+        </ul>
+    </div>
+    <div id="conteudo">
+        <h1>Bem-vindo à FleelaDeProgramação!</h1>
+        <p>A FleelaDeProgramação é uma plataforma de freelancer para programação e TI. Nossa missão é conectar clientes com profissionais de programação talentosos de todo o mundo. E o melhor de tudo, é completamente gratuito para usar!</p>
+        <h2>Destaques</h2>
+        <div id="destaques">
+            <div class="destaque">
+                <img src="imagens/img.jpg" alt="Foto 1">
+                <h2>Destaque 1</h2>
+                <p>Descrição do Destaque 1</p>
+            </div>
+            <div class="destaque">
+                <img src="imagens/img.jpg" alt="Foto 2">
+                <h2>Destaque 2</h2>
+                <p>Descrição do Destaque 2</p>
+            </div>
+        </div>
+        <h2>Projetos Mais Bem Avaliados</h2>
+        <div id="projetos">
+            <div class="projeto">
+                <img src="imagens/img.jpg" alt="Projeto 1">
+                <h2>Nome do Projeto 1</h2>
+                <p>Descrição do Projeto 1</p>
+                <button>Acessar Projeto</button>
+            </div>
+            <div class="projeto">
+                <img src="imagens/img.jpg" alt="Projeto 2">
+                <h2>Nome do Projeto 2</h2>
+                <p>Descrição do Projeto 2</p>
+                <button>Acessar Projeto</button>
+            </div>
+        </div>
+    </div>
+    <div id="rodape">
+        <p>© 2023 FleelaDeProgramação</p>
+        <ul>
+            <li><a href="#">Contato 📞</a></li>
+            <li><a href="#">Facebook 📘</a></li>
+            <li><a href="#">Twitter 🐦</a></li>
+            <li><a href="#">Instagram 📸</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
