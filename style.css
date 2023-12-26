@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b818c; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#menu {
+    background-color: #2b818c;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #211c33;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu ul li a {
+    color: #211c33;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#menu .perfil {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#menu .perfil a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#menu .perfil-item:hover .perfil {
+    display: block;
+}
+
+#conteudo {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.projeto {
+    background-color: #ffc994;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projeto h2, .projeto p {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #211c33;
+}
+
+.projeto button {
+    background-color: #ed2860;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#busca {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 50%;
+    background-color: #ffc994; /* Cor clara */
+    color: #211c33;
+}
+
+#rodape {
+    background-color: #2b818c;
+    padding: 20px;
+    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rodape ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#rodape ul li a {
+    color: #211c33;
+    text-decoration: none;
+    font-size: 18px;
+}
